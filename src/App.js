@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Student1Page from './pages/personal/Student1Page';
+import Student2Page from './pages/personal/Student2Page';
+import MainPage from './pages/common/MainPage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav className="navbar">
+          <div className="nav-container">
+            <Link to="/" className="logo">🌸 FlowerShop</Link>
+            <div className="nav-links">
+              <Link to="/">Главная</Link>
+              <Link to="/student1">Каталог (Студент 1)</Link>
+              <Link to="/student2">Другая страница (Студент 2)</Link>
+              <Link to="/cart" className="cart-link">🛒 Корзина</Link>
+            </div>
+          </div>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/student1" element={<Student1Page />} />
+          <Route path="/student2" element={<Student2Page />} />
+        </Routes>
+
+        <footer className="footer">
+          <p>© 2024 FlowerShop - Учебная практика. Разработано в команде.</p>
+          <p>Студент 1: [Ваше Имя] | Студент 2: [Имя второго студента]</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
