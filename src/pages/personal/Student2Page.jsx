@@ -37,7 +37,7 @@ const Student2Page = () => {
       alert('Пожалуйста, заполните имя и телефон');
       return;
     }
-    alert(Заказ оформлен! Сумма: ${total}₽\nС вами свяжутся по телефону: ${contactInfo.phone});
+      alert(`Заказ оформлен! Сумма: ${total}₽\nС вами свяжутся по телефону: ${contactInfo.phone}`);
   };
 
   const handleInputChange = (e) => {
