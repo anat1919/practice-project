@@ -405,3 +405,38 @@
 }
 
 }
+/* === СТИЛИ ДЛЯ БЛОКА "АКЦИИ" (Яна) === */
+.promotions {
+  background: linear-gradient(135deg, #FFEAA7, #FD79A8);
+  padding: 40px;
+  border-radius: 20px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.promotions h2 {
+  color: #2d3436;
+  margin-bottom: 30px;
+}
+
+.promotions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.promo-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.promo-card h3 {
+  color: #e84393;
+  margin-bottom: 10px;
+}
+
+.promo-card p {
+  color: #636e72;
+}
