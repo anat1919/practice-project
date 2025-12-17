@@ -14,8 +14,8 @@ function App() {
             <Link to="/" className="logo">🌸 FlowerShop</Link>
             <div className="nav-links">
               <Link to="/">Главная</Link>
-              <Link to="/student1">Каталог (Студент 1)</Link>
-              <Link to="/student2">Другая страница (Студент 2)</Link>
+              <Link to="/student1">Каталог (Аня)</Link>
+              <Link to="/student2">Другая страница (Яна)</Link>
               <Link to="/cart" className="cart-link">🛒 Корзина</Link>
             </div>
           </div>
@@ -29,7 +29,7 @@ function App() {
 
         <footer className="footer">
           <p>© 2024 FlowerShop - Учебная практика. Разработано в команде.</p>
-          <p>Студент 1: [Ваше Имя] | Студент 2: [Имя второго студента]</p>
+          <p>Студент 1: [Кузнецова] | Студент 2: [Басовская]</p>
         </footer>
       </div>
     </Router>

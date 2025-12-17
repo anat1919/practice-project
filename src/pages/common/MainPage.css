@@ -1,0 +1,371 @@
+.main-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero секция */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  padding: 60px 40px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.hero-slider {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 600px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  font-size: 1.2rem;
+  font-weight: 500;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cta-button {
+  display: inline-block;
+  background: white;
+  color: #667eea;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* О проекте */
+.about-project {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.about-project h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.project-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat .number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.stat .label {
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Команда */
+.team-section {
+  margin: 60px 0;
+}
+
+.team-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.team-card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.role {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.task {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.github-link {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  background: #f1f1f1;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.github-link:hover {
+  background: #e1e1e1;
+}
+
+/* Товары */
+.featured-products {
+  margin: 60px 0;
+}
+
+.featured-products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h4 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00b894;
+}
+
+.buy-button {
+  background: #00b894;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.buy-button:hover {
+  background: #00a085;
+}
+
+/* Как работает */
+.how-it-works {
+  background: #f0f4ff;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 60px 0;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.step {
+  text-align: center;
+  padding: 20px;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: #667eea;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.step h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.step p {
+  color: #666;
+}
+
+/* Ссылки на страницы */
+.page-links {
+  margin: 60px 0;
+}
+
+.page-links h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.page-link {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  border: 2px solid transparent;
+}
+
+.page-link:hover {
+  transform: translateY(-5px);
+  border-color: #667eea;
+}
+
+.link-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.page-link h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.page-link p {
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .project-stats {
+    gap: 20px;
+  }
+  
+  .stat .number {
+    font-size: 2.2rem;
+  }
+  
+  .team-grid,
+  .products-grid,
+  .steps,
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero,
+  .about-project,
+  .how-it-works {
+    padding: 30px 20px;
+  }
+}
