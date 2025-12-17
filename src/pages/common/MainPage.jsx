@@ -168,6 +168,27 @@ const MainPage = () => {
         </div>
       </section>
 
+{/* === ЭТОТ БЛОК ДОБАВИЛА [anaysob] === */}
+<section className="promotions">
+  <h2>🎁 Акции и скидки</h2>
+  <div className="promotions-grid">
+    <div className="promo-card">
+      <h3>Скидка 10% новым клиентам</h3>
+      <p>Промокод: FLOWER10</p>
+    </div>
+    <div className="promo-card">
+      <h3>Бесплатная доставка</h3>
+      <p>При заказе от 2500 рублей</p>
+    </div>
+    <div className="promo-card">
+      <h3>Подарок к заказу</h3>
+      <p>Открытка и конфеты в подарок</p>
+    </div>
+  </div>
+</section>
+
+
+      
       {/* Ссылки на страницы */}
       <section className="page-links">
         <h2>🔗 Страницы проекта</h2>
