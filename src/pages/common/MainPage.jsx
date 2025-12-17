@@ -168,7 +168,7 @@ const MainPage = () => {
         </div>
       </section>
 
-{/* === ЭТОТ БЛОК ДОБАВИЛА [anaysob] === */}
+{/* === ЭТОТ БЛОК ДОБАВИЛА ЯНА === */}
 <section className="promotions">
   <h2>🎁 Акции и скидки</h2>
   <div className="promotions-grid">
