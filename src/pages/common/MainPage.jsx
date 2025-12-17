@@ -3,39 +3,39 @@ import { Link } from 'react-router-dom';
 import './MainPage.css';
 
 const MainPage = () => {
-  const [featuredFlowers, setFeaturedFlowers] = useState([
+  const [featuredFlowers] = useState([
     {
       id: 1,
       name: "Романтический букет",
       price: 1200,
-      image: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w-400",
+      image: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=400",
       description: "Идеально для свидания"
     },
     {
       id: 2,
       name: "Букет невесты",
       price: 2500,
-      image: "https://images.unsplash.com/photo-1464207687429-7505649dae38?w-400",
+      image: "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400",
       description: "Для особого дня"
     },
     {
       id: 3,
       name: "Бизнес-букет",
       price: 1800,
-      image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w-400",
+      image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400",
       description: "Для деловых встреч"
     }
   ]);
 
   const [teamMembers] = useState([
     {
-      name: "[Твое имя]", // Вставьте ваше имя
+      name: "Анна", // Твое имя
       role: "Frontend разработчик",
       task: "Каталог товаров, фильтрация, UI/UX",
       github: "anat1919"
     },
     {
-      name: "[Имя второго студента]", // Второй студент вставит свое
+      name: "Яна", // Имя второго студента
       role: "Frontend разработчик",
       task: "Корзина, оформление заказа, контакты",
       github: "anaysob"
@@ -54,7 +54,7 @@ const MainPage = () => {
       setCurrentImage((prev) => (prev + 1) % slides.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   return (
     <div className="main-page">
@@ -146,6 +146,25 @@ const MainPage = () => {
         </div>
       </section>
 
+      {/* === ЭТОТ БЛОК ДОБАВИЛА ЯНА === */}
+      <section className="promotions">
+        <h2>🎁 Акции и скидки</h2>
+        <div className="promotions-grid">
+          <div className="promo-card">
+            <h3>Скидка 10% новым клиентам</h3>
+            <p>Промокод: FLOWER10</p>
+          </div>
+          <div className="promo-card">
+            <h3>Бесплатная доставка</h3>
+            <p>При заказе от 2500 рублей</p>
+          </div>
+          <div className="promo-card">
+            <h3>Подарок к заказу</h3>
+            <p>Открытка и конфеты в подарок</p>
+          </div>
+        </div>
+      </section>
+
       {/* Как работает магазин */}
       <section className="how-it-works">
         <h2>📦 Как сделать заказ</h2>
@@ -168,40 +187,6 @@ const MainPage = () => {
         </div>
       </section>
 
-{/* === ЭТОТ БЛОК ДОБАВИЛА ЯНА === */}
-<section className="promotions">
-  <h2>🎁 Акции и скидки</h2>
-  <div className="promotions-grid">
-    <div className="promo-card">
-      <h3>Скидка 10% новым клиентам</h3>
-      <p>Промокод: FLOWER10</p>
-    </div>
-    <div className="promo-card">
-      <h3>Бесплатная доставка</h3>
-      <p>При заказе от 2500 рублей</p>
-    </div>
-    <div className="promo-card">
-      <h3>Подарок к заказу</h3>
-      <p>{/* === ЭТОТ БЛОК ДОБАВИЛА ЯНА === */}
-<section className="promotions">
-  <h2>🎁 Акции и скидки</h2>
-  <div className="promotions-grid">
-    <div className="promo-card">
-      <h3>Скидка 10% новым клиентам</h3>
-      <p>Промокод: FLOWER10</p>
-    </div>
-    <div className="promo-card">
-      <h3>Бесплатная доставка</h3>
-      <p>При заказе от 2500 рублей</p>
-    </div>
-    <div className="promo-card">
-      <h3>Подарок к заказу</h3>
-      <p>Открытка и конфеты в подарок</p>
-    </div>
-  </div>
-</section>
-
-      
       {/* Ссылки на страницы */}
       <section className="page-links">
         <h2>🔗 Страницы проекта</h2>
